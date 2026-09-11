@@ -194,10 +194,20 @@
 
   /* PRICING */
   .pricing{background:var(--ink);color:var(--cream);}
-  .pricing .section-head{border-bottom-color:var(--line-dark);}
+  .pricing .section-head {
+    border-bottom-color: var(--line-dark);
+    margin-bottom: 16px; /* Esto elimina el hueco gigante debajo de la línea */
+  }
   .pricing .section-head p{color:rgba(246,242,233,0.65);}
   .price-table{width:100%;border-collapse:collapse;}
-  .price-table thead th{text-align:center;font-size:13px;font-weight:700;color:var(--cream);padding:0 16px 16px;border-bottom:1px solid var(--line-dark);}
+  .price-table thead th {
+    text-align: center;
+    font-size: 14px; /* Letra un poco más grande para compensar */
+    font-weight: 700;
+    color: var(--cream);
+    padding: 0 8px 12px; /* Reducimos el espacio sobrante */
+    border-bottom: 1px solid var(--line-dark);
+  }
   .price-table thead th:first-child{text-align:left;}
   .price-table thead th .sub{display:block;font-size:11px;font-weight:500;color:rgba(246,242,233,0.5);margin-top:4px;}
   .price-table thead th.best{color:var(--gold-bright);}
@@ -485,9 +495,9 @@
       <thead>
         <tr>
           <th></th>
-          <th class="best">Del 1 al 5<span class="sub">MEJOR PRECIO</span></th>
-          <th>Del 6 al 10<span class="sub">INTERMEDIO</span></th>
-          <th>Después del 10<span class="sub">NORMAL</span></th>
+          <th class="best">Del 1 al 5</th>
+          <th>Del 6 al 10</th>
+          <th>Después del 10</th>
         </tr>
       </thead>
       <tbody>
